@@ -5,9 +5,6 @@ import cheese from '../assets/cheese.png';
 import meat from '../assets/meat.png';
 import bottombun from '../assets/bottombun.png';
 import './Burger.css'
-import { relative } from 'node:path/win32';
-import { isAbsolute } from 'node:path';
-import { stringify } from 'node:querystring';
 
 interface BurgerProp {
     input: string;
@@ -36,8 +33,8 @@ export default function Burger({ input }: BurgerProp) {
 
     let tokenToMarginsMap: {[key:string]: string} = {
         topbun: "-8%",
-        lettuce: "-120px",
-        tomato: "-150px",
+        lettuce: "-10%",
+        tomato: "-14%",
         cheese: "-16%",
         meat: "-10%",
         bottombun: "-7.5%"
