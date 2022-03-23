@@ -9,8 +9,8 @@ interface TextInputProp {
 export default function TextInput({ input, setInput }: TextInputProp) {
     return (
         <>
-        <label className="" >What kind of burger would you like, kind sir?</label>
-        <input className="" value={input} onChange={e => setInput(e.target.value)} />
+        <label>What kind of burger would you like, kind sir?</label>
+        <input value={input} onChange={e => setInput(e.target.value)} />
         </>
     )
 }
