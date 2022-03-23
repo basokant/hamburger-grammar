@@ -42,8 +42,8 @@ export default function Burger({ input }: BurgerProp) {
     })
 
     return (
-        // <>{listImages}</>
-        <ul>{listItems}</ul>
+        <>{listImages}</>
+        // <ul>{listItems}</ul>
     )
 }
 

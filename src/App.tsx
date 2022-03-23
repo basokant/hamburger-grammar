@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <img className="App-logo" src="../logo512.png" alt="hello" />
+        <img className="App-logo" src={process.env.PUBLIC_URL + "/logo512.png"} alt="hello" />
       </div>
       <div className="content">
         <TextInput input={input} setInput={setInput} />
