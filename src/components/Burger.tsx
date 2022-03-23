@@ -37,7 +37,7 @@ export default function Burger({ input }: BurgerProp) {
     let tokenToMarginsMap: {[key:string]: string} = {
         topbun: "-8%",
         lettuce: "-120px",
-        tomato: "-220px",
+        tomato: "-150px",
         cheese: "-16%",
         meat: "-10%",
         bottombun: "-7.5%"
