@@ -4,6 +4,10 @@ import tomato from '../assets/tomato.png';
 import cheese from '../assets/cheese.png';
 import meat from '../assets/meat.png';
 import bottombun from '../assets/bottombun.png';
+import './Burger.css'
+import { relative } from 'node:path/win32';
+import { isAbsolute } from 'node:path';
+import { stringify } from 'node:querystring';
 
 interface BurgerProp {
     input: string;
@@ -30,19 +34,38 @@ export default function Burger({ input }: BurgerProp) {
         bottombun: bottombun
     }
 
+    let tokenToMarginsMap: {[key:string]: string} = {
+        topbun: "-8%",
+        lettuce: "-10%",
+        tomato: "-14%",
+        cheese: "-15%",
+        meat: "-10%",
+        bottombun: "-7.5%"
+    }
+
     const tokens = tokenize(input, inputToTokenMap);
     const listItems = tokens.map((token) => 
         <li>{token}</li>
     );
 
+    let counter = tokens.length;
     const listImages = tokens.map((token) => {
         if (tokenToImgMap[token]) {
-            return <img src={tokenToImgMap[token]} alt={token} />
+            const imgStyle = {
+                "margin-bottom": tokenToMarginsMap[token],
+                width: '40%',
+                height: 'auto',
+                'z-index': counter.toString(),
+            };
+            counter--;
+            return <img src={tokenToImgMap[token]} alt={token} style={imgStyle} />
         }
     })
 
     return (
-        <>{listImages}</>
+        <div className="burger">
+            {listImages}
+        </div>
         // <ul>{listItems}</ul>
     )
 }
