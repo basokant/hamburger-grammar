@@ -10,7 +10,8 @@ interface BurgerProp {
 };
 
 export default function Burger({ input }: BurgerProp) {
-    let tokenMap: {[key:string]: string} = {
+
+    let inputToTokenMap: {[key:string]: string} = {
         ham: "topbun",
         b: "lettuce",
         u: "tomato",
@@ -20,15 +21,29 @@ export default function Burger({ input }: BurgerProp) {
         "&": "space"
     }
 
-    const tokens = tokenize(input, tokenMap);
+    let tokenToImgMap: {[key:string]: string} = {
+        topbun: topbun,
+        lettuce: lettuce,
+        tomato: tomato,
+        cheese: cheese,
+        meat: meat,
+        bottombun: bottombun
+    }
+
+    const tokens = tokenize(input, inputToTokenMap);
     const listItems = tokens.map((token) => 
         <li>{token}</li>
     );
 
+    const listImages = tokens.map((token) => {
+        if (tokenToImgMap[token]) {
+            return <img src={tokenToImgMap[token]} alt={token} />
+        }
+    })
+
     return (
-        <>
+        // <>{listImages}</>
         <ul>{listItems}</ul>
-        </>
     )
 }
 

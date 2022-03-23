@@ -9,13 +9,17 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <img className="App-logo" src="../logo512.png" alt="hello" />
+      </div>
+      <div className="content">
         <TextInput input={input} setInput={setInput} />
         <Burger input={input} />
-      </header>
-      <footer>
-      </footer>
+      </div>
+      <div className="App-footer">
+        <p>Made by Ben Asokanthan.</p>
+        <p>inspired by a meme.</p>
+      </div>
     </div>
   );
 }
