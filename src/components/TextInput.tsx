@@ -1,4 +1,3 @@
-import { useRef } from 'react'
 import './TextInput.css'
 
 interface TextInputProp {

@@ -12,6 +12,7 @@ input {
 
 input:focus, input:hover {
     transform: scale(1.01);
+    outline: none;
 }
 
 label {
