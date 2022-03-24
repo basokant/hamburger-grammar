@@ -14,6 +14,23 @@
   align-items: center;
 }
 
+.modal-button {
+  height: auto;
+  width: 40px;
+  position: absolute;
+  top: 3vmin;
+  right: 3vmin;
+  transition: ease-in-out .2s;
+}
+
+.modal-button:hover {
+  transform: scale(1.1)
+}
+
+.modal-button:active {
+  transform: scale(0.8)
+}
+
 .App {
   background-color: #FFF6E9;
   font-size: calc(10px + 2vmin);
