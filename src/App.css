@@ -23,12 +23,65 @@
   transition: ease-in-out .2s;
 }
 
+.close {
+  top: 6vmin;
+  right: 6vmin;
+}
+
 .modal-button:hover {
   transform: scale(1.1)
 }
 
 .modal-button:active {
   transform: scale(0.8)
+}
+
+.modal-title {
+  font-family: itim;
+  font-size: 2em;
+  text-align: center;
+  color: #FFF6E9;
+  margin: 10px;
+}
+
+.flex-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flex-grid .col {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-grid .col p {
+  margin: 0px;
+}
+
+@media (max-width: 600px) {
+  .flex-grid {
+    display: block;
+  }
+  .flex-grid .col {
+    width: 100%;
+    margin: 0;
+  }
+
+  .modal-title {
+    font-size: 1.6em;
+  }
+
+}
+
+.ingredient {
+  width: 25vmin;
+  height: auto;
+  flex-grow: 1;
 }
 
 .App {
@@ -64,4 +117,17 @@
 
 p {
   padding: 0px 20px;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
 }
