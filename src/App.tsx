@@ -16,7 +16,9 @@ function App() {
     const inputPathName = `/${input}`;
 
     if (pathName != inputPathName) {
-      window.location.pathname = inputPathName;
+      const url = new URL(window.location.href);
+      url.pathname = inputPathName;
+      window.history.pushState({}, '', url);
     }
   }, [input])
 
