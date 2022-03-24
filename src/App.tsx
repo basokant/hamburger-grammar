@@ -22,9 +22,9 @@ function App() {
   const [isModalOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    let url = new URL(window.location.href);
-    url.searchParams.set('id',input);
-    window.history.pushState({}, '', url);
+    let params = new URLSearchParams(window.location.search);
+    params.set('id', input);
+    window.history.replaceState(null,'',`${window.location.pathname}?${params}`);
   }, [input])
 
   function openModal() {

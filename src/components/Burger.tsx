@@ -49,10 +49,10 @@ export default function Burger({ input }: BurgerProp) {
     const listImages = tokens.map((token) => {
         if (tokenToImgMap[token]) {
             const imgStyle = {
-                "margin-bottom": tokenToMarginsMap[token],
+                marginBottom: tokenToMarginsMap[token],
                 width: '40%',
                 height: 'auto',
-                'z-index': counter.toString(),
+                zIndex: counter.toString(),
             };
             counter--;
             return <img src={tokenToImgMap[token]} alt={token} style={imgStyle} />
