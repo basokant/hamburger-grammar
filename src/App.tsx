@@ -5,7 +5,7 @@ import TextInput from './components/TextInput';
 import Burger from './components/Burger';
 import './App.css';
 
-let pathName = window.location.pathname.slice(1);
+let pathName = window.location.pathname.slice(19);
 
 function App() {
   const [input, setInput] = useState(pathName);
@@ -17,7 +17,7 @@ function App() {
 
     if (pathName != inputPathName) {
       const url = new URL(window.location.href);
-      url.pathname = inputPathName;
+      url.pathname = '/hamburger-grammar' + inputPathName;
       window.history.pushState({}, '', url);
     }
   }, [input])
