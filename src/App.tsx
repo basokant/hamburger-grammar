@@ -9,7 +9,7 @@ const url = new URL(window.location.href);
 let params = new URLSearchParams(url.search);
 
 function App() {
-  const [input, setInput] = useState(params.get('id') || '');
+  const [input, setInput] = useState(params.get('id') || 'hamburger');
   const [isModal, setIsModal] = useState(false);
 
   useEffect(() => {
