@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div className="App-header">
-        <img src={modalButton} />
+        <img src={modalButton} className="modal-button"/>
         <img src="" alt="" />
         <img className="App-logo" src={logo} alt="logo" />
       </div>
