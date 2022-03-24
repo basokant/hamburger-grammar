@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hamburger-grammar/static/css/main.98c50245.css",
-    "main.js": "/hamburger-grammar/static/js/main.de3a8ca9.js",
+    "main.js": "/hamburger-grammar/static/js/main.765ffac0.js",
     "static/js/787.f5ad6e5c.chunk.js": "/hamburger-grammar/static/js/787.f5ad6e5c.chunk.js",
     "static/media/topbun.png": "/hamburger-grammar/static/media/topbun.f55047a828f6651f19ce.png",
     "static/media/lettuce.png": "/hamburger-grammar/static/media/lettuce.7abccb7c4c53185bcfab.png",
@@ -13,11 +13,11 @@
     "static/media/infobutton.png": "/hamburger-grammar/static/media/infobutton.7c60da7f739dba62133f.png",
     "index.html": "/hamburger-grammar/index.html",
     "main.98c50245.css.map": "/hamburger-grammar/static/css/main.98c50245.css.map",
-    "main.de3a8ca9.js.map": "/hamburger-grammar/static/js/main.de3a8ca9.js.map",
+    "main.765ffac0.js.map": "/hamburger-grammar/static/js/main.765ffac0.js.map",
     "787.f5ad6e5c.chunk.js.map": "/hamburger-grammar/static/js/787.f5ad6e5c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.98c50245.css",
-    "static/js/main.de3a8ca9.js"
+    "static/js/main.765ffac0.js"
   ]
 }
