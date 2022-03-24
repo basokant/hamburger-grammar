@@ -1,3 +1,4 @@
+import { SyntheticEvent } from 'react';
 import './TextInput.css'
 
 interface TextInputProp {

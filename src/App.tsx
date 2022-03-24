@@ -5,9 +5,20 @@ import TextInput from './components/TextInput';
 import Burger from './components/Burger';
 import './App.css';
 
+let pathName = window.location.pathname.slice(1);
+
 function App() {
-  const [input, setInput] = useState("hamburger");
+  const [input, setInput] = useState(pathName);
   const [isModal, setIsModal] = useState(false);
+
+  useEffect(() => {
+    pathName = window.location.pathname;
+    const inputPathName = `/${input}`;
+
+    if (pathName != inputPathName) {
+      window.location.pathname = inputPathName;
+    }
+  }, [input])
 
   return (
     <div className="App">
