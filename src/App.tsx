@@ -5,21 +5,17 @@ import TextInput from './components/TextInput';
 import Burger from './components/Burger';
 import './App.css';
 
-let pathName = window.location.pathname.slice(19);
+const url = new URL(window.location.href);
+let params = new URLSearchParams(url.search);
 
 function App() {
-  const [input, setInput] = useState(pathName);
+  const [input, setInput] = useState(params.get('id') || '');
   const [isModal, setIsModal] = useState(false);
 
   useEffect(() => {
-    pathName = window.location.pathname;
-    const inputPathName = `/${input}`;
-
-    if (pathName != inputPathName) {
-      const url = new URL(window.location.href);
-      url.pathname = '/hamburger-grammar' + inputPathName;
-      window.history.pushState({}, '', url);
-    }
+    let url = new URL(window.location.href);
+    url.searchParams.set('id',input);
+    window.history.pushState({}, '', url);
   }, [input])
 
   return (
