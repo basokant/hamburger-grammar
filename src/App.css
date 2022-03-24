@@ -7,7 +7,6 @@
 }
 
 .App-header {
-  min-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +15,7 @@
 
 .modal-button {
   height: auto;
-  width: 40px;
+  width: 5vmin;
   position: absolute;
   top: 3vmin;
   right: 3vmin;
@@ -49,6 +48,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 1.5em;
 }
 
 .flex-grid .col {
@@ -64,8 +64,13 @@
 }
 
 @media (max-width: 600px) {
+  .App {
+    min-height: 95vh;
+  }
+
   .flex-grid {
     display: block;
+    font-size: 1.2em;
   }
   .flex-grid .col {
     width: 100%;
@@ -73,9 +78,13 @@
   }
 
   .modal-title {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 
+  .close {
+    top: 10vmin;
+    right: 10vmin;
+  }
 }
 
 .ingredient {

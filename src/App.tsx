@@ -31,10 +31,6 @@ function App() {
     setIsOpen(true);
   }
 
-  function afterOpenModal() {
-
-  }
-
   function closeModal() {
     setIsOpen(false);
   }
@@ -44,8 +40,8 @@ function App() {
       backgroundColor: "#FFC46D",
       border: "none",
       fontFamily: "Montserrat",
-      fontSize: "1.5em",
       borderRadius: "80px",
+      fontWeight: "500"
     },
   }
 
@@ -54,7 +50,6 @@ function App() {
       <Modal
         closeTimeoutMS={300}
         isOpen={isModalOpen}
-        onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={modalStyles}
         contentLabel="Hello World"
