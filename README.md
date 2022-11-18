@@ -1,4 +1,52 @@
-# Getting Started with Create React App
+<div style="height: 100px; padding: 15px" align="center">
+    <img src="./src/assets/logo_background.png"/>
+</div>
+
+<center>
+
+# Hamburger Grammar
+
+[Live Project](http://localhost:3000/?id=hamburger)
+
+<div style="display: flex; justify-content: center; gap: 10px">
+
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+</div>
+
+</center>
+
+*The unpopular meme brought to life!*
+
+An app in which different segments of the word "hamburger" correspond to a specific hamburger ingredient. The user can type out their order (a new word using the segments of "hamburger"), and the app will reactively deliver the desired burger for the user!
+
+## Screenshots
+
+The ingredient list
+
+![ingredients](./src/assets/ingredients.png)
+
+The Main Screen
+
+![main screen](./src/assets/mainscreen.png)
+
+## Features
+
+- Beautiful, hand-drawn and home-cooked burgers!
+- Link Sharing (enables users to copy their link to save or send their burger order)
+
+## What I Learned
+
+- This was my first TypeScript project! (TypeScript is an AMAZING developer tool)
+- Learned some intricasies of CSS, like z-index and the stacking context for stacking the images of the ingredients on top of each other.
+- How to create a simple modal.
+- The History browser API
+- *That I love making silly things that let me take life less seriously*
+
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
