@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5%;
+    margin: 5% 0%;
     transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
     transition: ease-in-out;
