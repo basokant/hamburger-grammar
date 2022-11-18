@@ -4,7 +4,6 @@
 
 ![My Skills](https://skillicons.dev/icons?i=typescript,react)
 
-
 *The unpopular meme brought to life!*
 
 An app in which different segments of the word "hamburger" correspond to a specific hamburger ingredient. The user can type out their order (a new word using the segments of "hamburger"), and the app will reactively deliver the desired burger for the user!
@@ -15,7 +14,7 @@ The ingredient list
 
 ![ingredients](./src/assets/ingredients.png)
 
-The Main Screen
+The main screen
 
 ![main screen](./src/assets/mainscreen.png)
 
