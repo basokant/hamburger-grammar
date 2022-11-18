@@ -32,9 +32,11 @@ The Main Screen
 - The History browser API
 - *That I love making silly things that let me take life less seriously*
 
----
+## Set-Up
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Clone the repository, and run `npm install` under the project directory before running the available scripts to host the React app locally.
 
 ## Available Scripts
 
