@@ -1,23 +1,9 @@
-<div style="height: 100px; padding: 15px" align="center">
-    <img src="./src/assets/logo_background.png"/>
-</div>
-
-<div align="center">
-
 # Hamburger Grammar
 
 [Live Project](http://localhost:3000/?id=hamburger)
 
-<div style="display: flex; justify-content: center; gap: 10px">
+![My Skills](https://skillicons.dev/icons?i=typescript,react)
 
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-</div>
-
-</div>
 
 *The unpopular meme brought to life!*
 
