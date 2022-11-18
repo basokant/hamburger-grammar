@@ -2,7 +2,7 @@
     <img src="./src/assets/logo_background.png"/>
 </div>
 
-<center>
+<div align="center">
 
 # Hamburger Grammar
 
@@ -17,7 +17,7 @@
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 </div>
 
-</center>
+</div>
 
 *The unpopular meme brought to life!*
 
