@@ -41,9 +41,6 @@ export default function Burger({ input }: BurgerProp) {
     }
 
     const tokens = tokenize(input, inputToTokenMap);
-    const listItems = tokens.map((token) => 
-        <li>{token}</li>
-    );
 
     let counter = tokens.length;
     const listImages = tokens.map((token) => {
@@ -63,7 +60,6 @@ export default function Burger({ input }: BurgerProp) {
         <div className="burger">
             {listImages}
         </div>
-        // <ul>{listItems}</ul>
     )
 }
 
