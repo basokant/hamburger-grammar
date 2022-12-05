@@ -46,6 +46,7 @@ The main screen
 - Learned some intricasies of CSS, like z-index and the stacking context for stacking the images of the ingredients on top of each other.
 - How to create a simple modal.
 - The History browser API.
+- Debouncing in React.
 - *That I love making silly things that let me take life less seriously.*
 
 ## Set-Up
