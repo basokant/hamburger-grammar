@@ -6,7 +6,24 @@
 
 *The unpopular meme brought to life!*
 
-An app in which different segments of the word "hamburger" correspond to a specific hamburger ingredient. The user can type out their order (a new word using the segments of "hamburger"), and the app will reactively deliver the desired burger for the user!
+A web app based on a meme with the same name. Different substrings of the word "hamburger" correspond to a specific hamburger ingredient (listed below in the ingredient list). The user can type out their order (a new word using the segments of "hamburger"), and the app will reactively deliver the desired burger for the user! The combinations are endlessly hilarious.
+
+## Ingredient List
+
+- "ham" ~ top bun
+- "b" ~ lettuce
+- "u" ~ tomato
+- "r" ~ cheese
+- "g" ~ meat patty
+- "er" ~ bottom bun
+
+## My Favourite Creations
+
+*Next time you're at McDonald's, order one of these.*
+
+1. [uuuuuuuuu](https://basokant.github.io/hamburger-grammar/?id=uuuuuuuuu)
+2. [erburger](https://basokant.github.io/hamburger-grammar/?id=erburger)
+3. [hamer](https://basokant.github.io/hamburger-grammar/?id=hamer)
 
 ## Screenshots
 
@@ -28,8 +45,8 @@ The main screen
 - This was my first TypeScript project! (TypeScript is an AMAZING developer tool)
 - Learned some intricasies of CSS, like z-index and the stacking context for stacking the images of the ingredients on top of each other.
 - How to create a simple modal.
-- The History browser API
-- *That I love making silly things that let me take life less seriously*
+- The History browser API.
+- *That I love making silly things that let me take life less seriously.*
 
 ## Set-Up
 
